@@ -1,4 +1,4 @@
-# ReadMe
+# 2DMTGaze: 2D Point of Gaze Multi-Stream Model Using Transformer
 
 our work 2DMTGaze for 2D Point of Gaze Estimation 
 
