@@ -1,0 +1,44 @@
+---
+train:
+  model:
+    model_name: "vit"
+    image_size: 224
+    patch_size: 16
+    num_classes: 2
+    dim: 512
+    depth: 6
+    heads: 16
+    mlp_dim: 1024
+    dropout: 0.1
+    emb_dropout: 0.1
+  params:
+    image_size: [224,224,224,224]
+    batch_size: 256
+    epoch: 40
+    lr: 0.0001
+    decay: 0.1
+    decay_step:
+      - 30
+  save:
+    save_path: "/home/work/didonglin/Gaze-PrecClk/Gaze-tf"
+    model_name: "vit"
+    step: 2
+  data:
+    # image: '/disk1/repository/p30pro_shape/Image'
+    # label: '/disk1/repository/p30pro_shape/Label'
+    image: '/disk1/repository/GazeCapture_2D/Image'
+    label: '/disk1/repository/GazeCapture_2D/Label/train'
+    # image: '/disk1/repository/p30pro_shape/Image'
+    # label: '/disk1/repository/p30pro_shape/Label'
+  pretrains: "None"
+test:
+   load:
+      begin_step: 38
+      end_step: 40
+      steps: 2
+      model_name: "vit"
+      load_path: "/home/work/didonglin/Gaze-PrecClk/Gaze-tf"
+   data:
+    image: '/disk1/repository/GazeCapture_2D/Image'
+    label: '/disk1/repository/GazeCapture_2D/Label/test'
+reader: gazecapturef
