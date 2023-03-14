@@ -1,0 +1,35 @@
+---
+train:
+  model:
+    model_name: "aff"
+  params:
+    image_size: [112,112,224,224]
+    batch_size: 1024
+    epoch: 20
+    lr: 0.001
+    decay: 0.1
+    decay_step:
+      - 12
+  save:
+    save_path: "/disk1/repository/gazeCheckpoint/Gaze-tf"
+    model_name: "aff"
+    step: 2
+  data:
+    # image: '/disk1/repository/p30pro_shape/Image'
+    # label: '/disk1/repository/p30pro_shape/Label'
+    image: '/disk1/repository/GazeCapture_2D/Image'
+    label: '/disk1/repository/GazeCapture_2D/Label/train'
+    # image: '/disk1/repository/p30pro_shape/Image'
+    # label: '/disk1/repository/p30pro_shape/Label'
+  pretrains: "None"
+test:
+   load:
+      begin_step: 18
+      end_step: 20
+      steps: 2
+      model_name: "aff"
+      load_path: "/disk1/repository/gazeCheckpoint/Gaze-tf"
+   data:
+    image: '/disk1/repository/GazeCapture_2D/Image'
+    label: '/disk1/repository/GazeCapture_2D/Label/test'
+reader: gazecapturef
