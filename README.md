@@ -42,10 +42,17 @@ GazeTR: GazeTR
     GazeTR-Hybrid
 
 aff: aff-net
+
+iTracker: iTracker
+
 new_model: our work
 
 
 
 ## benchmark
-all result on VGSP 5-Fold
+all result on MPIIFaceGaze and GazeCapture
+<img width="797" alt="截屏2023-03-15 12 17 30" src="https://user-images.githubusercontent.com/64659513/225205296-1da1a7fa-07f9-4d7c-b1c1-0bd2d26f2246.png">
 
+[2dmtmodel.pdf](https://github.com/huaiqi220/2DMTGaze/files/10975942/2dmtmodel.pdf)
+
+[Result.pdf](https://github.com/huaiqi220/2DMTGaze/files/10975944/Result.pdf)
