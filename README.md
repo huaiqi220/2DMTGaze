@@ -12,6 +12,7 @@ We compare the performance of 2DMTGaze with the popular Vision-transformer, Swin
 The experiment shows that the original unoptimized transformer performs poorly on the 2D PoG task. 
 The 2DMTGaze combines facial and eye features and performs the same as the convolution-based model on the benchmark.
 
+<img width="1826" alt="截屏2023-03-15 12 19 17" src="https://user-images.githubusercontent.com/64659513/225205547-8179ab23-cec2-4f78-80f7-7479793a0093.png">
 
 
 ## Compared model
@@ -53,6 +54,5 @@ new_model: our work
 all result on MPIIFaceGaze and GazeCapture
 <img width="797" alt="截屏2023-03-15 12 17 30" src="https://user-images.githubusercontent.com/64659513/225205296-1da1a7fa-07f9-4d7c-b1c1-0bd2d26f2246.png">
 
-[2dmtmodel.pdf](https://github.com/huaiqi220/2DMTGaze/files/10975942/2dmtmodel.pdf)
+<img width="1072" alt="截屏2023-03-15 12 19 00" src="https://user-images.githubusercontent.com/64659513/225205559-56e13a23-e293-4207-bba9-ed4aa5607d20.png">
 
-[Result.pdf](https://github.com/huaiqi220/2DMTGaze/files/10975944/Result.pdf)
